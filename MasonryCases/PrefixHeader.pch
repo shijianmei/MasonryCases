@@ -1,0 +1,26 @@
+//
+//  PrefixHeader.pch
+//  MasonryCases
+//
+//  Created by Jianmei on 2018/7/17.
+//  Copyright © 2018 Jianmei. All rights reserved.
+//
+
+#ifndef PrefixHeader_h
+#define PrefixHeader_h
+#import <Masonry.h>
+#import "JMBaseViewController.h"
+
+
+
+
+
+
+
+#define SCREEN_WIDTH     [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT    [UIScreen mainScreen].bounds.size.height
+#define iPhoneX     ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? \
+([[UIScreen mainScreen] currentMode].size.height == 2436) : NO)
+#define UI_NAVIGATION_BAR_HEIGHT        (iPhoneX ? 88 : 64)
+
+#endif /* PrefixHeader_h */
